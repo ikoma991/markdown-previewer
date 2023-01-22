@@ -73,6 +73,11 @@ body{
         color:black;
         font-family: Consolas,monospace;
       }
+      table,th,td{
+        border:2px solid #EEEEEE;
+        border-collapse:collapse;
+        padding:10px;
+      }
     }
   }
 }

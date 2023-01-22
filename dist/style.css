@@ -71,3 +71,8 @@ body {
   color: black;
   font-family: Consolas, monospace;
 }
+#parent #previewer-box #preview table, #parent #previewer-box #preview th, #parent #previewer-box #preview td {
+  border: 2px solid #EEEEEE;
+  border-collapse: collapse;
+  padding: 10px;
+}
