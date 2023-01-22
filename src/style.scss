@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+@mixin scrollbarStyle($element) {
+#{$element}::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+}
+
+body{
+  font-family:"Lato";
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  // background-color:#E0E0E0;
+  background-color:#424242;
+  color:#fff;
+}
+
+#parent{
+  height:90vh;
+  width:90vw;
+  padding:30px;
+  display:flex;
+  gap: 40px;
+  
+  #editor-box{
+    padding:20px;
+    h2{
+      text-align:center;
+    }
+    @include scrollbarStyle(#editor);
+    #editor{
+      padding:10px;
+      border-radius:10px;
+      background-color:#616161;
+      color:#fff;
+      overflow-y: scroll;
+      scrollbar-width: none; 
+      -ms-overflow-style: none;
+    }
+  }
+  
+  #previewer-main-box{
+    overflow:hidden;
+    &>h2{
+      text-align:center;
+    }
+  @include scrollbarStyle(#previewer-box);
+  }
+  #previewer-box{
+    overflow:auto;
+    padding:10px;
+    height:100%;
+    #preview{
+      border:1px solid black;
+      padding:20px;
+      border-radius:10px;
+      margin-bottom:100px;
+      img{
+        max-width:100%;
+      }
+      a{
+        color:#2979FF;
+      }
+      pre{
+        background-color:#FAFAFA;
+        padding:10px;
+        color:#fff;
+      }
+      code{
+        background-color:#fff;
+        color:black;
+        font-family: Consolas,monospace;
+      }
+    }
+  }
+}
+
+
+

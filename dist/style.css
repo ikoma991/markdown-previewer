@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+body {
+  font-family: "Lato";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #424242;
+  color: #fff;
+}
+
+#parent {
+  height: 90vh;
+  width: 90vw;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+}
+#parent #editor-box {
+  padding: 20px;
+}
+#parent #editor-box h2 {
+  text-align: center;
+}
+#parent #editor-box #editor::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+#parent #editor-box #editor {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #616161;
+  color: #fff;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#parent #previewer-main-box {
+  overflow: hidden;
+}
+#parent #previewer-main-box > h2 {
+  text-align: center;
+}
+#parent #previewer-main-box #previewer-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+#parent #previewer-box {
+  overflow: auto;
+  padding: 10px;
+  height: 100%;
+}
+#parent #previewer-box #preview {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+#parent #previewer-box #preview img {
+  max-width: 100%;
+}
+#parent #previewer-box #preview a {
+  color: #2979FF;
+}
+#parent #previewer-box #preview pre {
+  background-color: #FAFAFA;
+  padding: 10px;
+  color: #fff;
+}
+#parent #previewer-box #preview code {
+  background-color: #fff;
+  color: black;
+  font-family: Consolas, monospace;
+}
